@@ -1,0 +1,26 @@
+<form id="my-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" autocomplete="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="email" required>
+  
+    <label for="country">Country:</label>
+    <select id="country" name="country" autocomplete="country">
+      <option value="" selected disabled>Select a country...</option>
+      <option value="US">United States</option>
+      <option value="CA">Canada</option>
+      <option value="MX">Mexico</option>
+    </select>
+  
+    <div id="additional-fields" style="display: none;">
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state">
+  
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
