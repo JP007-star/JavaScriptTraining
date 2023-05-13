@@ -65,54 +65,54 @@
 // }
 
 
-// let slideIndex = 1;
-// showSlides(slideIndex);
+let slideIndex = 1;
+showSlides(slideIndex);
 
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
- 
-//   if (n > slides.length) {slideIndex = 1}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+ console.log(slides);
+  if (n > slides.length) {slideIndex = 1}
 
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  
+}
+
+
+// const images = [
+//     "image_1.jpg",
+//     "image_2.jpg",
+//     "image_3.jpg"
+//   ];
+  
+//   function getRandomImage() {
+//     const index = Math.floor(Math.random() * images.length);
+//     const randomImage = images[index];
+//     return randomImage;
 //   }
   
-//   slides[slideIndex-1].style.display = "block";
+//   function displayRandomImage() {
+//     const image = document.getElementById("random-image");
+//     const imageUrl = getRandomImage();
+//     image.src = imageUrl;
+//   }
   
-// }
-
-
-const images = [
-    "image_1.jpg",
-    "image_2.jpg",
-    "image_3.jpg"
-  ];
-  
-  function getRandomImage() {
-    const index = Math.floor(Math.random() * images.length);
-    const randomImage = images[index];
-    return randomImage;
-  }
-  
-  function displayRandomImage() {
-    const image = document.getElementById("random-image");
-    const imageUrl = getRandomImage();
-    image.src = imageUrl;
-  }
-  
-  displayRandomImage();
+//   displayRandomImage();
 
 
 
