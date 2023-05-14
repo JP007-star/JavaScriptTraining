@@ -1,3 +1,4 @@
+const { log } = require("console");
 
 function createRecord(data) {
   // Generate a unique identifier for the new record
@@ -45,4 +46,8 @@ function deleteRecord(id) {
     document.cookie = `${id}=; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
   }
 }
+document.cookie='name=jp'
 
+const ele=document.getElementById('demo')
+console.log(document.cookie)
+ele.innerHTML=document.cookie
