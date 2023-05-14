@@ -16,6 +16,10 @@
     color: #fff;
   }
 
+  td{
+    font-weight: bold;
+  }
+
 
   /* .button {
     background-color: #ccc;
@@ -94,7 +98,7 @@
 
   
   /* Fading animation */
-  .fade {
+  /* .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
@@ -102,7 +106,7 @@
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+  } */
 
 
 
@@ -118,6 +122,11 @@
   .tooltip:hover .tooltip-text {
     visibility: visible;
   }
+
+  .demo{        /*--> selector */
+    color:red; /* --> properties */
+ }
+
   
   .tooltip-text {
     visibility: hidden;

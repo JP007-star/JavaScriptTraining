@@ -78,6 +78,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// n --> current slide  except others than that going to display none
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -88,6 +89,7 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+ 
   
   slides[slideIndex-1].style.display = "block";
   
